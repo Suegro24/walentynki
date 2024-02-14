@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Walentynki</title>
+</head>
+<body>
+    <div class="box">
+        <p class="text">Czy zostaniesz moją <span style="color: red">Walentynką</span> ?</p>
+        <div style="display: flex; gap: 10px; justify-content: center;">
+            <button id="yes">TAK</button>
+            <button id="no">NIE</button>
+        </div>
+    </div>
+
+    <script>
+        const no = document.querySelector('#no');
+        var left = 5;
+        no.addEventListener('mousemove', function() {
+            no.style.left = 2*left + 'px';
+            left+=20;
+        }, false)
+
+        const yes = document.querySelector('#yes')
+        yes.addEventListener('click', function() {
+            window.location = 'https://www.youtube.com/watch?v=csGo9-sPVRY&ab_channel=MTJWytw%C3%B3rniaMuzyczna';
+        })
+    </script>
+</body>
+</html>
